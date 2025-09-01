@@ -10,6 +10,7 @@ import {
   Star,
   Award,
 } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react';
 
 export default function Home() {
@@ -47,10 +48,15 @@ export default function Home() {
         {/* Profile Section */}
         <div className="text-center mb-16">
           <div className="relative inline-block mb-10">
-            <div className="w-32 h-32 bg-gradient-to-br from-blue-800 via-slate-800 to-amber-800 rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 backdrop-blur-sm">
-              <span className="text-4xl font-black text-white tracking-tight">
-                JG
-              </span>
+            <div className="w-32 h-32 bg-gradient-to-br from-blue-800 via-slate-800 to-amber-800 rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
+              <Image
+                src="https://picsum.photos/128/128"
+                width={128}
+                height={128}
+                alt="Foto do Perfil"
+                className="object-cover"
+                data-ai-hint="profile picture"
+              />
             </div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-xl border-3 border-slate-900 flex items-center justify-center">
               <div className="w-3 h-3 bg-white rounded-full"></div>
@@ -61,7 +67,7 @@ export default function Home() {
             Junior Gualbertto
           </h1>
           <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 py-3 mb-8">
-            <Briefcase size={18} className="text-amber-400" />
+            <Briefcase size={22} className="text-amber-400" />
             <p className="text-base font-semibold text-slate-200">
               Consultor especializado em financiamento e consórcio de imóveis
             </p>
