@@ -47,7 +47,8 @@ export default function Home() {
       <div className="relative z-10 max-w-md mx-auto px-6 py-16">
         {/* Profile Section */}
         <div
-          className="text-center mb-16 animate-fade-in-up [animation-delay:200ms]"
+          style={{ animationFillMode: 'both' }}
+          className="text-center mb-12 animate-fade-in-up"
         >
           <div className="relative inline-block mb-10 transition-transform duration-300 hover:scale-105">
             <div className="w-32 h-32 bg-gradient-to-br from-blue-800 via-slate-800 to-amber-800 rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
@@ -81,7 +82,8 @@ export default function Home() {
 
         {/* Action Buttons */}
         <div
-          className="space-y-4 mb-16 animate-fade-in-up [animation-delay:400ms]"
+          style={{ animationFillMode: 'both', animationDelay: '200ms' }}
+          className="space-y-4 mb-12 animate-fade-in-up"
         >
           {/* WhatsApp Button */}
           <button
@@ -134,7 +136,7 @@ export default function Home() {
                 className="group-hover:scale-110 transition-transform duration-300"
               />
               <div className="text-left">
-                <div className="text-lg font-bold">Website</div>
+                <div className="text-lg font-bold">Site</div>
                 <div className="text-sm opacity-90 font-medium">Em breve</div>
               </div>
             </div>
@@ -144,7 +146,8 @@ export default function Home() {
 
         {/* Contact Information */}
         <div
-          className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-8 mb-12 border border-white/10 animate-fade-in-up [animation-delay:600ms]"
+          style={{ animationFillMode: 'both', animationDelay: '400ms' }}
+          className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-8 mb-12 border border-white/10 animate-fade-in-up"
         >
           <h3 className="text-xl font-black text-white mb-8 text-center">
             Informações de Contato
@@ -189,7 +192,8 @@ export default function Home() {
 
         {/* Call to Action */}
         <div
-          className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-1 animate-fade-in-up [animation-delay:800ms]"
+          style={{ animationFillMode: 'both', animationDelay: '600ms' }}
+          className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-1 animate-fade-in-up"
         >
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-white/10 rounded-xl backdrop-blur-sm">
@@ -217,7 +221,8 @@ export default function Home() {
 
         {/* Footer */}
         <div
-          className="text-center text-slate-400 font-medium animate-fade-in-up [animation-delay:1000ms]"
+          style={{ animationFillMode: 'both', animationDelay: '800ms' }}
+          className="text-center text-slate-400 font-medium animate-fade-in-up"
         >
           <p className="text-xs">
             © 2025 Junior Gualbertto - Consultoria Imobiliária
@@ -227,5 +232,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
