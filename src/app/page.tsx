@@ -1,4 +1,3 @@
-
 'use client';
 
 import {
@@ -64,12 +63,11 @@ export default function Home() {
           <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 py-3 mb-8">
             <Briefcase size={18} className="text-amber-400" />
             <p className="text-base font-semibold text-slate-200">
-              Consultor especializado em financiamento de imóveis
+              Consultor especializado em financiamento e consórcio de imóveis
             </p>
           </div>
-          <p className="text-slate-300 text-sm leading-relaxed px-2 font-medium max-w-xs mx-auto">
-            Especialista em encontrar as melhores condições para você conquistar
-            seu imóvel dos sonhos.
+          <p className="text-slate-300 text-sm leading-relaxed px-2 font-medium max-w-sm mx-auto">
+            Encontre o financiamento e consórcio ideal para seu imóvel. São mais de 40 bancos com alternativas exclusivas. Simule já pelo WhatsApp 📲
           </p>
         </div>
 
@@ -177,39 +175,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Services Section */}
-        <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-8 mb-12 border border-white/10">
-          <h3 className="text-xl font-black text-white mb-8 text-center">
-            Serviços Especializados
-          </h3>
-          <div className="space-y-3">
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-3 h-3 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full"></div>
-              <span className="text-white font-semibold">
-                Financiamento habitacional
-              </span>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-3 h-3 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full"></div>
-              <span className="text-white font-semibold">
-                Refinanciamento de imóveis
-              </span>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-3 h-3 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full"></div>
-              <span className="text-white font-semibold">
-                Consultoria financeira personalizada
-              </span>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-3 h-3 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full"></div>
-              <span className="text-white font-semibold">
-                Análise de crédito imobiliário
-              </span>
-            </div>
-          </div>
-        </div>
-
         {/* Call to Action */}
         <div className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500">
           <div className="flex justify-center mb-6">
@@ -221,7 +186,7 @@ export default function Home() {
             Pronto para realizar seu sonho?
           </h3>
           <p className="text-amber-100 font-medium mb-8 leading-relaxed text-sm">
-            Entre em contato e descubra as melhores opções de financiamento para
+            Entre em contato e descubra as melhores opções de financiamento e consórcio para
             você
           </p>
           <button
