@@ -7,7 +7,6 @@ import {
   MapPin,
   Phone,
   Briefcase,
-  Star,
   Award,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -34,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-amber-950 relative font-sans overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-amber-950 relative font-sans overflow-x-hidden">
       {/* Sophisticated Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-tr from-blue-950/80 via-slate-900/60 to-amber-900/80"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(59,130,246,0.08),transparent_50%)]"></div>
@@ -44,9 +43,12 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
 
       {/* Main Container */}
-      <div className="relative z-10 max-w-md mx-auto px-6 py-16 animate-fade-in-up">
+      <div className="relative z-10 max-w-md mx-auto px-6 py-16">
         {/* Profile Section */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16 animate-fade-in-up"
+          style={{ animationDelay: '0.1s' }}
+        >
           <div className="relative inline-block mb-10 transition-transform duration-300 hover:scale-105">
             <div className="w-32 h-32 bg-gradient-to-br from-blue-800 via-slate-800 to-amber-800 rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
               <Image
@@ -78,7 +80,10 @@ export default function Home() {
         </div>
 
         {/* Action Buttons */}
-        <div className="space-y-4 mb-16">
+        <div
+          className="space-y-4 mb-16 animate-fade-in-up"
+          style={{ animationDelay: '0.3s' }}
+        >
           {/* WhatsApp Button */}
           <button
             onClick={handleWhatsAppClick}
@@ -139,7 +144,10 @@ export default function Home() {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-8 mb-12 border border-white/10">
+        <div
+          className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl p-8 mb-12 border border-white/10 animate-fade-in-up"
+          style={{ animationDelay: '0.5s' }}
+        >
           <h3 className="text-xl font-black text-white mb-8 text-center">
             Informações de Contato
           </h3>
@@ -182,7 +190,10 @@ export default function Home() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-1">
+        <div
+          className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-1 animate-fade-in-up"
+          style={{ animationDelay: '0.7s' }}
+        >
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-white/10 rounded-xl backdrop-blur-sm">
               <Award size={28} className="text-amber-200" />
@@ -208,7 +219,10 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="text-center text-slate-400 font-medium">
+        <div
+          className="text-center text-slate-400 font-medium animate-fade-in-up"
+          style={{ animationDelay: '0.9s' }}
+        >
           <p className="text-xs">
             © 2025 Junior Gualbertto - Consultoria Imobiliária
           </p>
