@@ -34,7 +34,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-amber-950 relative font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-amber-950 relative font-sans overflow-hidden">
       {/* Sophisticated Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-tr from-blue-950/80 via-slate-900/60 to-amber-900/80"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(59,130,246,0.08),transparent_50%)]"></div>
@@ -44,10 +44,10 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
 
       {/* Main Container */}
-      <div className="relative z-10 max-w-md mx-auto px-6 py-16">
+      <div className="relative z-10 max-w-md mx-auto px-6 py-16 animate-fade-in-up">
         {/* Profile Section */}
         <div className="text-center mb-16">
-          <div className="relative inline-block mb-10">
+          <div className="relative inline-block mb-10 transition-transform duration-300 hover:scale-105">
             <div className="w-32 h-32 bg-gradient-to-br from-blue-800 via-slate-800 to-amber-800 rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
               <Image
                 src="https://i.ibb.co/yBqQyLx5/profile.jpg"
@@ -59,7 +59,7 @@ export default function Home() {
               />
             </div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-xl border-3 border-slate-900 flex items-center justify-center">
-              <div className="w-3 h-3 bg-white rounded-full"></div>
+              <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
           {/* WhatsApp Button */}
           <button
             onClick={handleWhatsAppClick}
-            className="group w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-between border border-emerald-500/20"
+            className="group w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-between border border-emerald-500/20"
           >
             <div className="flex items-center gap-4">
               <MessageCircle
@@ -102,7 +102,7 @@ export default function Home() {
           {/* Instagram Button */}
           <button
             onClick={handleInstagramClick}
-            className="group w-full bg-gradient-to-r from-purple-700 to-pink-700 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-between border border-purple-500/20"
+            className="group w-full bg-gradient-to-r from-purple-700 to-pink-700 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-between border border-purple-500/20"
           >
             <div className="flex items-center gap-4">
               <Instagram
@@ -122,7 +122,7 @@ export default function Home() {
           {/* Website Button */}
           <button
             onClick={handleWebsiteClick}
-            className="group w-full bg-gradient-to-r from-blue-700 to-indigo-700 hover:from-blue-600 hover:to-indigo-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-between border border-blue-500/20"
+            className="group w-full bg-gradient-to-r from-blue-700 to-indigo-700 hover:from-blue-600 hover:to-indigo-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-between border border-blue-500/20"
           >
             <div className="flex items-center gap-4">
               <Globe
@@ -147,9 +147,9 @@ export default function Home() {
           {/* Address */}
           <button
             onClick={handleMapClick}
-            className="group w-full text-left p-6 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 flex items-start gap-4 mb-6 border border-white/10 hover:border-white/20 transform hover:scale-[1.01]"
+            className="group w-full text-left p-6 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 flex items-start gap-4 mb-6 border border-white/10 hover:border-white/20 transform hover:-translate-y-1"
           >
-            <div className="p-3 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl">
+            <div className="p-3 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl transition-transform duration-300 group-hover:scale-105">
               <MapPin size={20} className="text-white" />
             </div>
             <div className="flex-1">
@@ -161,7 +161,7 @@ export default function Home() {
                 <br />
                 Águas Claras - Brasília/DF
               </div>
-              <div className="text-xs text-amber-400 mt-2 font-semibold group-hover:text-amber-300 transition-colors">
+              <div className="text-xs text-amber-400 mt-2 font-semibold group-hover:text-amber-300 transition-colors duration-300 group-hover:translate-x-1">
                 Ver no mapa →
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500">
+        <div className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-1">
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-white/10 rounded-xl backdrop-blur-sm">
               <Award size={28} className="text-amber-200" />
@@ -217,5 +217,3 @@ export default function Home() {
     </div>
   );
 }
-
-// Test change
