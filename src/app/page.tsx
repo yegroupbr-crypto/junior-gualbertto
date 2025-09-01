@@ -75,7 +75,7 @@ export default function Home() {
             </p>
           </div>
           <p className="text-slate-300 text-sm leading-relaxed px-2 font-medium max-w-sm mx-auto">
-            Encontre o financiamento e consórcio ideal {' '} <br className="sm:hidden" /> para seu imóvel. São mais de 40 bancos com alternativas exclusivas. Simule já pelo WhatsApp 📲
+            Encontre o financiamento e consórcio ideal <br className="sm:hidden" /> para seu imóvel. São mais de 40 bancos com alternativas exclusivas. Simule já pelo WhatsApp&nbsp;📲
           </p>
         </div>
 
@@ -165,9 +165,7 @@ export default function Home() {
                 Escritório
               </div>
               <div className="text-slate-300 font-medium text-sm leading-relaxed">
-                Conect Towers QS 01, sala 639
-                <br />
-                Águas Claras - Brasília/DF
+                Conect Towers QS 01, sala 639, Águas Claras - Brasília/DF
               </div>
               <div className="text-xs text-amber-400 mt-2 font-semibold group-hover:text-amber-300 transition-colors duration-300 group-hover:translate-x-1">
                 Ver no mapa →
