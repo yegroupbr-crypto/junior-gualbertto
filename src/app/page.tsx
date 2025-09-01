@@ -50,7 +50,7 @@ export default function Home() {
           <div className="relative inline-block mb-10">
             <div className="w-32 h-32 bg-gradient-to-br from-blue-800 via-slate-800 to-amber-800 rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 backdrop-blur-sm overflow-hidden">
               <Image
-                src="https://firebasestorage.googleapis.com/v0/b/app-hosting-project.appspot.com/o/e8d531a1-965a-4654-8a7e-9764121a97ff?alt=media&token=e8d531a1-965a-4654-8a7e-9764121a97ff"
+                src="https://i.ibb.co/yBqQyLx5/profile.jpg"
                 width={128}
                 height={128}
                 alt="Foto do Perfil"
