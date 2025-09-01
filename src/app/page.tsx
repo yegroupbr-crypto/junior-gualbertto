@@ -8,7 +8,6 @@ import {
   MapPin,
   Phone,
   Briefcase,
-  Award,
 } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
@@ -76,7 +75,7 @@ export default function Home() {
             </p>
           </div>
           <p className="text-slate-300 text-sm leading-relaxed px-2 font-medium max-w-sm mx-auto">
-            Encontre o financiamento e consórcio ideal para seu imóvel. São mais de 40 bancos com alternativas exclusivas. Simule já pelo WhatsApp 📲
+            Encontre o financiamento e consórcio ideal {' '} <br className="sm:hidden" /> para seu imóvel. São mais de 40 bancos com alternativas exclusivas. Simule já pelo WhatsApp 📲
           </p>
         </div>
 
@@ -125,7 +124,7 @@ export default function Home() {
             <div className="w-2 h-2 bg-white/30 rounded-full group-hover:bg-white/50 transition-colors duration-300"></div>
           </button>
 
-          {/* Website Button */}
+          {/* Site Button */}
           <button
             onClick={handleWebsiteClick}
             className="group w-full bg-gradient-to-r from-blue-700 to-indigo-700 hover:from-blue-600 hover:to-indigo-600 text-white font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-between border border-blue-500/20"
@@ -188,35 +187,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Call to Action */}
-        <div
-          style={{ animationFillMode: 'both', animationDelay: '600ms' }}
-          className="bg-gradient-to-br from-amber-700/80 to-amber-800/80 backdrop-blur-xl rounded-2xl p-8 text-center text-white shadow-xl border border-amber-600/20 mb-8 hover:from-amber-600/80 hover:to-amber-700/80 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-1 animate-fade-in-up"
-        >
-          <div className="flex justify-center mb-6">
-            <div className="p-4 bg-white/10 rounded-xl backdrop-blur-sm">
-              <Award size={28} className="text-amber-200" />
-            </div>
-          </div>
-          <h3 className="text-xl font-black mb-4 text-white">
-            Pronto para realizar seu sonho?
-          </h3>
-          <p className="text-amber-100 font-medium mb-8 leading-relaxed text-sm">
-            Entre em contato e descubra as melhores opções de financiamento e consórcio para
-            você
-          </p>
-          <button
-            onClick={handleWhatsAppClick}
-            className="group bg-white hover:bg-slate-50 text-amber-800 font-bold py-4 px-8 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-amber-200/20"
-          >
-            <span className="text-base">Consulta Gratuita</span>
-            <MessageCircle
-              size={18}
-              className="inline ml-2 group-hover:scale-110 transition-transform duration-300"
-            />
-          </button>
         </div>
 
         {/* Footer */}
